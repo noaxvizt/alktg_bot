@@ -26,6 +26,8 @@ async def start(message):
                               "\nПоменять режим на черно-белый /blackwhite, на цветной /color")
     global status_num
     status_num = 1
+    if 'data' not in os.listdir():
+        os.mkdir("data")
     if 'bot' + str(message.chat.id) not in os.listdir("data"):
         os.mkdir('data/bot' + str(message.chat.id))
     else:
