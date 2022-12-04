@@ -6,6 +6,9 @@
 <br>cd alktg_bot
 <br>git checkout dev
 <br>python3 -m pip install --user --upgrade pip pip install -r requirements.txt
+<br>Создать файл config.py с TOKEN = 'телеграм бот токен'
+LOGIN = "почта"
+PASSWORD = "пароль" 
 <br>python3 main.py
 
 <br>python3 -m pip install --user --upgrade pip
