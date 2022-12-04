@@ -6,7 +6,7 @@ def make_pdf(dir_path, blackwhite_color_mode):
     if blackwhite_color_mode:
         images = [Image.open(dir_path + '/' + f) for f in os.listdir(dir_path)]
     else:
-        images = [Image.open(dir_path + '/' + f) for f in os.listdir(dir_path)]
+        images = [Image.open(dir_path + '/' + f).convert('L') for f in os.listdir(dir_path)]
 
     pdf_path = dir_path + "/pdf_file.pdf"
     if len(images) > 1:
